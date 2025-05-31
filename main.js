@@ -1,7 +1,7 @@
 const items = []
 
 function addItem() {
-    alert("adicionar mais itens")
+
     const itemName = document.querySelector("#item").value
 
     const item = {
@@ -11,6 +11,6 @@ function addItem() {
 
     items.push(item)
 
-    console.log(items)
-    
+    document.querySelector("#item").value = ""
+
 }
