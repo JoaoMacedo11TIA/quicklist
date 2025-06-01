@@ -25,9 +25,9 @@ function showItemsList() {
         sectionList.innerHTML += `   
         <div class="item">   
             <div>
-                    <input type="checkbox" name="list" id="item-${index}">
+                    <input type="checkbox" name="list" id="item-${index}" ${item.checked && "checked"}>
 
-                    <div class="custom-checkbox" onclick=""checkItem('${item.name}')>
+                    <div class="custom-checkbox" onclick="checkItem('${item.name}')">
                         <img src="./assets/checked.svg" alt="checked">
                     </div>
                     <label for="item-${index}" onclick="checkItem('${item.name}')">${item.name}</label>                                                                 
